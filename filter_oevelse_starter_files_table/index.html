@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter øvelse</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Fartøjer – filtrering</h1>
+
+        <section class="controls">
+            <button class="btn" data-filter="all">Vis alle</button>
+            <button class="btn" data-filter="electric">Alle el-drevne</button>
+            <button class="btn" data-filter="moreThan2">Mere end 2 sæder</button>
+            <button class="btn" data-filter="electricJonas">El-drevne ejet af Jonas</button>
+            <button class="btn" data-filter="rugbrodMoreThan1">Rugbrød + plads til mere end 1</button>
+        </section>
+
+        <p class="feedback" id="feedback">Viser alle fartøjer.</p>
+
+        <div class="tableWrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Fuel</th>
+                        <th>Passengers</th>
+                        <th>Stops</th>
+                        <th>Owned By</th>
+                        <th>Features</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
