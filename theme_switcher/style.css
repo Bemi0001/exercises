@@ -1,0 +1,121 @@
+
+:root {
+  --header-bg-col: #f2f2f2;
+  --text-col: #111;
+  --border-col: #d0d0d0;
+  --page-bg: #ffffff;
+  --card-bg: #ffffff;
+  --btn-bg: #111;
+  --btn-text: #fff;
+}
+
+
+body[data-theme="light"] {
+  --header-bg-col: #f2f2f2;
+  --text-col: #111;
+  --border-col: #d0d0d0;
+  --page-bg: #ffffff;
+  --card-bg: #ffffff;
+  --btn-bg: #111;
+  --btn-text: #fff;
+}
+
+body[data-theme="dark"] {
+  --header-bg-col: #1f1f1f;
+  --text-col: #f5f5f5;
+  --border-col: #3a3a3a;
+  --page-bg: #121212;
+  --card-bg: #1a1a1a;
+  --btn-bg: #f5f5f5;
+  --btn-text: #111;
+}
+
+body[data-theme="hawaii"] {
+  --header-bg-col: #ff4fd8;
+  --text-col: #08202a;
+  --border-col: #00c2ff;
+  --page-bg: #fff2fb;
+  --card-bg: #ffffff;
+  --btn-bg: #00c2ff;
+  --btn-text: #08202a;
+}
+
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: var(--page-bg);
+  color: var(--text-col);
+}
+
+
+.site-header {
+  background: var(--header-bg-col);
+  border-bottom: 2px solid var(--border-col);
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px;
+}
+
+.theme-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+select {
+  padding: 8px 10px;
+  border: 2px solid var(--border-col);
+  background: var(--card-bg);
+  color: var(--text-col);
+  border-radius: 8px;
+}
+
+
+.site-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.card {
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--card-bg);
+  border: 2px solid var(--border-col);
+  border-radius: 12px;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border: 2px solid var(--border-col);
+  border-radius: 10px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  cursor: pointer;
+}
+
+
+.site-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+  border-top: 2px solid var(--border-col);
+  opacity: 0.9;
+}
